@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>My RPG</title>
+	<script type="text/javascript" src="json2.js"></script>
+	<script type="text/javascript" src="MyRPG.js"></script>
+  </head>
+  
+  <body onload="init()">
+    <div id="statusBar"></div>
+    <h1 id="location">In Town</h1>
+	<p id="situation">You are safely in town and feeling like you're ready to set off on an adventure!<br/>
+	<br/>
+	What would you like to do?</p>
+	<input type="button" id="attack" value="Attack" onclick="attack()" style="display:none;"/>
+	<input type="button" id="run" value="Run Away" onclick="runAway()" style="display:none;"/>
+	<div id="fights" style="display:none; background-color: lightgrey;padding: 3px;border: 1px solid;width: 23em;margin-top:1em; margin-bottom: 1em; max-height: 10em; overflow-y: auto;"  ></div>
+	<input type="button" id="forest" value="Wander into the Forest" onclick="startForestFight()" />
+	
+	<input type="button" id="town" value="Go back to Town" onclick="gotoTown()" style="display:none;"/>
+	
+	<input type="button" id="store" value="Buy Equipment" onclick="gotoStore()" />
+  </body>
+</html>

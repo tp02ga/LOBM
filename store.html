@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>My RPG</title>
+	<script type="text/javascript" src="json2.js"></script>
+	<script type="text/javascript" src="MyRPG.js"></script>
+	
+  </head>
+  
+  <body onload="init()">
+    <div id="statusBar"></div>
+    <h1 id="location">In the Store</h1>
+	<p id="situation">You enter the general store and are welcomed by the shop keep.<br/>
+	<br/>
+	Shop Keep: Aiy Laddy! See ah-nything ye like?</p>
+	
+	<input type="button" value="Buy Dagger" onclick="buyWeapon('Dagger')" /> 25 gold<br/>
+	<input type="button" value="Buy Leather Armor" onclick="buyArmor('Leather Armor')" /> 50 gold <br/>
+	<br/>
+	<input type="button" value="Leave Store" onclick="gotoTown()"/>
+  </body>
+</html>
